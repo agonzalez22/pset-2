@@ -16,11 +16,10 @@ let T1 = readlineSync.question("\nEnter three test grades.\n");
 let T2 = readlineSync.question("");
 let T3 = readlineSync.question("");
 
-let Hweight0 = ((H1 + H2 + H3) / 3) * Hweight
-let Qweight0 = ((Q1 + Q2 + Q3) / 3) * Hweight
-let Tweight0 = ((T1 + T2 + T3) / 3) * Hweight
+let Hweight0 = (H1*Hweight) + (H2*Hweight) + (H3*Hweight)
+let Qweight0 = (Q1*Qweight) + (Q2*Qweight) + (Q3*Qweight)
+let Tweight0 = (T1*Tweight) + (T2*Tweight) + (T3*Tweight)
 
-let FinalGrade = (Hweight0 + Qweight0 + Tweight0)
-let FinalGrade0 = Math.round(100*FinalGrade)/(100)
+let FinalGrade = (Hweight0 + Qweight0 + Tweight0) / 3
 
-console.log("\nYour marking period grade is " + (FinalGrade0) + "%")
+console.log("\nYour marking period grade is " + FinalGrade.toFixed(2) + "%")
