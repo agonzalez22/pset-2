@@ -7,5 +7,5 @@ let totalp = student + teacher;
 let buscap = totalp / cap
 let buses = Math.ceil(buscap*1)
 let busremain = totalp % buscap
-
+why does this hate me
 console.log("\n" + totalb + " bus(es) is (are) needed, with " + busremain)
