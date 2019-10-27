@@ -4,8 +4,8 @@ const teacher = Number(readlineSync.question("Teachers: "));
 const cap = Number(readlineSync.question("Bus capactiy: "));
 
 let totalp = student + teacher;
-let buscap = totalp / cap
-let buses = Math.ceil(buscap*1)
-let busremain = totalp % buscap
-why does this hate me
-console.log("\n" + totalb + " bus(es) is (are) needed, with " + busremain)
+let fulbus = totalp / cap;
+let remp = Math.ceil(fulbus);
+let busremain = totalp % cap;
+
+console.log("\n" + remp + " bus(es) is (are) needed, with " + busremain + " passengers(s) on the last bus.");
